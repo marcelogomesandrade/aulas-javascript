@@ -8,7 +8,7 @@ console.log('Senac Penha')
 /* Manipulando dados */
 
 // variáveis 
-let curso = "HTML5 e CSS3"
+let curso = "HTML5 e CSS3";
 let ano = 2023;
 
 // Constantes 
