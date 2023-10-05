@@ -23,3 +23,19 @@ const dados= ["Hélio", "Gomes de Andrade",54,"6666-55566","Guarulhos"];
 console.log (`${dados[0]} tem ${dados[2]} anos.`)
 
 
+console.log("_________________");
+
+// Objeto 
+
+let carro = { 
+              marca: "Fiat", 
+              modelo: "Uno com escada",
+              portas: 2,
+              cor: "branca",
+              opcionais: ["Ar Condicionado","Vidros elétricos", "Alarme"]
+            };
+
+ console.log(carro);
+ console.log(carro.modelo); 
+ console.log(`Carros da ${carro.marca} tem a cor ${carro.cor}`)  
+ console.log(`Este carro tem ${carro.opcionais[0]} e ${carro.opcionais[2]}`)        
