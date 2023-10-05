@@ -38,4 +38,25 @@ let carro = {
  console.log(carro);
  console.log(carro.modelo); 
  console.log(`Carros da ${carro.marca} tem a cor ${carro.cor}`)  
- console.log(`Este carro tem ${carro.opcionais[0]} e ${carro.opcionais[2]}`)        
+ console.log(`Este carro tem ${carro.opcionais[0]} e ${carro.opcionais[2]}`)   
+ 
+ 
+ /* Exercícios 
+
+ 1) Crie um novo objeto contendo informações de algo que você gosta (Filme, livro, comida, jogo, etc)
+
+ 2) Mostre uma mensagem com pelo menos 2 propriedades do objeto */
+
+
+ let filme = { 
+
+             titulo : "Batman", 
+             genero: "Aventura",
+             ano: 1989,
+             producao: "Warner Bros",
+             duracao: "120 minutos",
+             opcionais : ["Robin", "Coringa","Pinguim","Mulher Gato"],
+             idade : "maior de 14"
+ }
+
+ console.log(`O filme ${filme.titulo} é do ano de ${filme.ano} e não teve o personagem ${filme.opcionais[0]}.`)
