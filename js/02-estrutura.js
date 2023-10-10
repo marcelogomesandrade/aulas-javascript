@@ -79,5 +79,51 @@ console.log(`nome:${pessoa.nome}`);
 console.log(`celular:${pessoa.telefones[1]}`);
 console.log(`peso:${pessoa.medidas.peso}kg.`);
 
+// Array de objetos 
 
+let alunos = [
+
+  {
+    nome: "Naruto",
+    idade: 10
+
+  },
+
+  {
+    nome: "Guts",
+    idade: 30
+  },
+
+  {
+    nome: "Dohko",
+    idade: 120
+  }
+
+];
+
+console.log(alunos[1].nome);
+console.log(alunos[0].nome);
+console.log(`O cavaleiro de ouro originalmente era o ${alunos[2].nome} de libra que tem ${alunos[2].idade} anos`);
+
+
+// Array com Matriz 
+
+let tecnologias = [
+
+  ["HTML5", "CSS3", "JavaScript"],
+  ["PHP", "SQL", "APIs", "Node", "Python"],
+  ["Figma", "Photoshop"]
+
+
+];
+
+console.log (tecnologias[1][3]);// Node 
+
+console.log (tecnologias[2][1]);//Photoshop 
+
+console.log (tecnologias[0][0]);//HTML5
+
+//exemplo e dica 
+
+console.table(filme);
 
