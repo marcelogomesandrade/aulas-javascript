@@ -11,16 +11,35 @@ let mensagem; //indefenida
 
 // Verificar a idde e determinar se é menor ou maior 
 
-if (idade >= 18) { 
-    mensagem= "maior";
+//*if (idade >= 18) { 
+ //   mensagem= "maior";
     
 
-} else {
-    mensagem= "menor";
-}
+// else {
+    //mensagem= "menor";
+//*
 
 // Apresentando os resultados APOS a condicional
-console.log(`${usuario} é ${mensagem} de idade!`);
+//console.log(`${usuario} é ${mensagem} de idade!`);
 
-alert(`${usuario} é ${mensagem} de idade!`);
+//alert(`${usuario} é ${mensagem} de idade!`);
+
+if( idade>= 60){
+    mensagem="idoso(a)";
+} 
+else if (idade>=18){
+    mensagem="adulto(a)";
+}
+
+else {
+
+    mensagem="menor";
+
+}
+
+console.log(`${usuario} você tem ${idade} anos e é considerado ${mensagem},`);
+
+alert(`${usuario} você tem ${idade} anos e é considerado ${mensagem},`);
+
+
 
