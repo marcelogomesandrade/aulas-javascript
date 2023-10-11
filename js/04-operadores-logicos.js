@@ -6,8 +6,8 @@ const limiteDeFaltas= 10;
 
 //Resultados do aluno fictício
 let aluno= "Jean";
-let mediaFinal= 10;
-let faltas= 10;
+let mediaFinal= 8.5;
+let faltas= 3;
 let resultado ;
 
 /* Operador lógico e (AND)*/
