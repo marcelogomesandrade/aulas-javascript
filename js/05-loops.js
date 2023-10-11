@@ -40,9 +40,13 @@
 
 /* Loop com array*/
 
-let clientes = ["Ozzy", "Dio", "Gallin", "Martin", "Hughes"];
+let clientes = [ "Gallin", "Martin", "Hughes", "MC Hammer","Madonna","Preta Gil","Pink"];
 
-for (let i = 0; i < 5; i++) {
+//"Cache/Memória" da quantidade de elementos do array
+
+let quantidade = clientes.length;
+
+for (let i = 0; i < quantidade; i++) {
     console.log(`Cliente: ${clientes[i]}`);
 
 
