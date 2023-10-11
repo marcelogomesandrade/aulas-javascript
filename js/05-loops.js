@@ -1,3 +1,4 @@
+"use strict";
 // Comandos de Repetição 
 
 //Instruções para realizar ações para uma quantidade especifica de vezes. 
@@ -13,11 +14,20 @@
 
 /* OBS.: normalmente o loop é controlado através de uma variável contadora.*/
 
+//let contador = 1;
+//while (contador <=5 ){ 
+//console.log (`valor de contador: ${contador}`);
+//contador++;// ++ incremento 
+
+//}
+
+// Exemplo do/while (FAÇA/ENQUANTO)
+
 let contador = 1;
-while (contador <=5 ){ 
-    console.log (`valor de contador: ${contador}`);
+do {
+    console.log(`Contador vale : ${contador}`);
     contador++;
 
-}
+} while (contador <= 3)
 
 
