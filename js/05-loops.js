@@ -23,11 +23,13 @@
 
 // Exemplo do/while (FAÇA/ENQUANTO)
 
-let contador = 1;
+let i = 1;
 do {
-    console.log(`Contador vale : ${contador}`);
-    contador++;
+    console.log(`Contador vale : ${i}`);
+    i++;
 
-} while (contador <= 3)
+} while (i <= 3)
+
+// obs. normalmente variável de controle de repetição são chamadas de i, j, ou k. Exemplo contador pode mudar pela i, por exemplo. 
 
 
