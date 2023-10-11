@@ -25,17 +25,26 @@
 
 //let i = 1;
 //do {
-   // console.log(`Contador vale : ${i}`);
-    //i++;
+// console.log(`Contador vale : ${i}`);
+//i++;
 
 //} while (i <= 3)
 
 // obs. normalmente variável de controle de repetição são chamadas de i, j, ou k. Exemplo 'contador' pode mudar pela i, por exemplo.
 
 // EXEMPLO FOR (PARA)
-for ( let i= 1; i<=10; i++){
-console.log(`i Vale ${i}`);
+//for ( let i= 1; i<=10; i++){
+//console.log(`i Vale ${i}`);
+
+//}
+
+/* Loop com array*/
+
+let clientes = ["Ozzy", "Dio", "Gallin", "Martin", "Hughes"];
+
+for (let i = 0; i < 5; i++) {
+    console.log(`Cliente: ${clientes[i]}`);
+
 
 }
-
 
