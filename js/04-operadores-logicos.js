@@ -48,15 +48,24 @@ console.log("---------------");
 /* Operador lógico || (OR - OU)*/
 
 let diaDaSemana = "segunda";
-if(diaDaSemana== "sábado" || diaDaSemana == "domingo") {
+if (diaDaSemana == "sábado" || diaDaSemana == "domingo") {
     console.log("Final de semana :)");
 } else {
     console.log("vá trabalhar...");
 }
 
 
+console.log("---------------");
 
+/* Operador lógico ! (NOT - NÃO/NEGAÇÃO)*/
 
+let blackFriday = true;
+
+if (!blackFriday) {
+    console.log("Preços normais...");
+} else {
+    console.log("Preços com desconto...");
+}
 
 
 
