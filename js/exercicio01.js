@@ -1,5 +1,5 @@
 // Habilitando o modo estrito do JS 
-"use strict" (uso restrito);
+//"use strict" (uso restrito);
 //3)Crie duas variáreis :nota 1 e nota2
 
 let nota1= 6;
