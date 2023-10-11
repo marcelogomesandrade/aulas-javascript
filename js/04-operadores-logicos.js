@@ -7,17 +7,27 @@ const limiteDeFaltas= 10;
 //Resultados do aluno fictício
 let aluno= "Jean";
 let mediaFinal= 8.5;
-let faltas= 3;
+let faltas= 30;
 let resultado ;
 
 /* Operador lógico e (AND)*/
 
-if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
+//if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
     resultado = "aprovado";
 
-} else {
+//} else {
     resultado = "reprovado";
 
+
+//}
+
+if(mediaFinal >= mediaMinima && faltas <= limiteDeFaltas){
+    resultado = "aprovado";
+} else if (faltas > limiteDeFaltas){
+    resultado = "reprovado por faltas";
+} else {
+    resultado = "reprovado";
+    
 
 }
 
