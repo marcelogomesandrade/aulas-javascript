@@ -34,7 +34,7 @@ function exemplo2() {
 
 // Forma 3: arrow function 
 
-const exemplo3 = ()=>{
+const exemplo3 = () => {
     console.log("arrow function");
 };
 
@@ -45,14 +45,14 @@ exemplo2();
 exemplo3();
 
 // Função com parâmetros e retorno de dados/resultados
-function somar(valor1,valor2){
-return valor1 + valor2;
+function somar(valor1, valor2) {
+    return valor1 + valor2;
 
 }
 // Chamamos a função diversas vezes e passando valores diferentes como parâmetros 
-console.log (somar(10,20));
-console.log (somar(15,50));
-console.log (somar(30,47.8));
+console.log(somar(10, 20));
+console.log(somar(15, 50));
+console.log(somar(30, 47.8));
 
 
 /* Formatação de valores em Reais */
@@ -60,21 +60,19 @@ console.log (somar(30,47.8));
 
 let preco = 1000;
 let desconto = preco * 0.10; //10%
-let precoFinal = preco - desconto; 
+let precoFinal = preco - desconto;
 
-console.log (`preco: ${preco.toLocaleString("pt-br",{
-    style: "currency",
-    currency:"BRL"
+function formatarPreco(valor) {
+    return valor.toLocaleString("pt-br", {
+        style: "currency",
+        currency: "BRL"
 
-})}`);
-console.log (`desconto: ${desconto.toLocaleString("pt-br",{
-    style: "currency",
-    currency:"BRL"
+    })
+}
 
-})}`);
-console.log (`Preço Final ${precoFinal.toLocaleString("pt-br",{
-    style: "currency",
-    currency:"BRL"
+console.log(`preco: ${formatarPreco(preco)}`);
+console.log(`desconto: ${formatarPreco(desconto)}`);
+console.log(`Preço Final ${formatarPreco(precoFinal)}`);
 
-})}`);
+
 
