@@ -1,20 +1,9 @@
 "use strict";
 
-let alunos = ["Joãozinho","Mariazinha"," Giuseppezinho"];
+let alunos = ["Joãozinho","Mariazinha","Giuseppezinho"];
 
-let Mariazinha {
+let quantidade = alunos.length;
 
-    idade=34;
-}
-
-let Joãozinho {
-
-    idade=35;
-
-}
-
-let Giuseppezinho {
-
-    idade=33;
-}
+for (let i = 0; i < quantidade; i++) {
+    console.log(`Aluno: ${alunos[i]}`);}
 
