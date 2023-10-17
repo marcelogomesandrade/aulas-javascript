@@ -40,7 +40,7 @@
 
 /* Loop com array*/
 
-let clientes = [ "Gallin", "Martin", "Hughes", "MC Hammer","Madonna","Preta Gil","Pink"];
+let clientes = ["Gallin", "Martin", "Hughes", "MC Hammer", "Madonna", "Preta Gil", "Pink"];
 
 //"Cache/Memória" da quantidade de elementos do array
 
@@ -59,7 +59,7 @@ console.log('--------');
 let bandas = ["Slayer", "Dream Theater", "Nightwish"];
 
 //para BANDA DE BANDAS
-for (let banda of bandas){
+for (let banda of bandas) {
     console.log(banda);
 }
 
@@ -69,23 +69,27 @@ for (let banda of bandas){
 
 let livro = {
     titulo: "HTML5",
-    autor : "Maujor",
-    ano:2016,
+    autor: "Maujor",
+    ano: 2016,
     editora: "Novatec",
     edição: 3,
     site: "http://maujor.com"
 };
 
-// para DADOS dentro/em livro 
+// para PROPRIEDADES dentro/em livro 
 
-for(let dados in livro){
+for (let propriedades in livro) {
     //Acessar APENAS a propriedades
 
     //console.log(dados);
 
     //Acessar VALOR de cada propriedades 
 
-    console.log(livro[dados])
+    //console.log(livro[dados])
+
+    console.log(`${propriedades} -> ${livro[propriedades]} `)
+
+
 }
 
 
