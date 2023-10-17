@@ -44,12 +44,25 @@ exemplo1();
 exemplo2();
 exemplo3();
 
-// Função com paramêtros e retorno de dados/resultados
+// Função com parâmetros e retorno de dados/resultados
 function somar(valor1,valor2){
 return valor1 + valor2;
 
 }
-// Chamamos a função diversas vezes e passando valores diferentes como paramêtros 
+// Chamamos a função diversas vezes e passando valores diferentes como parâmetros 
 console.log (somar(10,20));
 console.log (somar(15,50));
 console.log (somar(30,47.8));
+
+
+/* Formatação de valores em Reais */
+
+
+let preco = 1000;
+let desconto = preco * 0.10; //10%
+let precoFinal = preco - desconto; 
+
+console.log (`preco: ${preco.toLocaleString}`);
+console.log (`desconto: ${desconto.toLocaleString}`);
+console.log (`Preço Final ${precoFinal.toLocaleString}`);
+
