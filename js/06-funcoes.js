@@ -19,3 +19,37 @@ entre outras
 */
 
 
+/* Como escrever funções no JS?*/
+
+// Forma 1: função anômina
+const exemplo1 = function () {
+    console.log("função anômina");
+};
+
+// Forma 2: função nomeada /declarada
+function exemplo2() {
+
+    console.log("função nomeada/declarada");
+}
+
+// Forma 3: arrow function 
+
+const exemplo3 = ()=>{
+    console.log("arrow function");
+};
+
+// Chamada de função para excução 
+
+exemplo1();
+exemplo2();
+exemplo3();
+
+// Função com paramêtros e retorno de dados/resultados
+function somar(valor1,valor2){
+return valor1 + valor2;
+
+}
+// Chamamos a função diversas vezes e passando valores diferentes como paramêtros 
+console.log (somar(10,20));
+console.log (somar(15,50));
+console.log (somar(30,47.8));
