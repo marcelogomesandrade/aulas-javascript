@@ -52,3 +52,43 @@ for (let i = 0; i < quantidade; i++) {
 
 }
 
+console.log('--------');
+
+// for/of --> para arrays 
+
+let bandas = ["Slayer", "Dream Theater", "Nightwish"];
+
+//para BANDA DE BANDAS
+for (let banda of bandas){
+    console.log(banda);
+}
+
+
+
+// for/in --> para objetos 
+
+let livro = {
+    titulo: "HTML5",
+    autor : "Maujor",
+    ano:2016,
+    editora: "Novatec",
+    edição: 3,
+    site: "http://maujor.com"
+};
+
+// para DADOS dentro/em livro 
+
+for(let dados in livro){
+    //Acessar APENAS a propriedades
+
+    //console.log(dados);
+
+    //Acessar VALOR de cada propriedades 
+
+    console.log(livro[dados])
+}
+
+
+
+
+
