@@ -18,12 +18,12 @@ Selecione VÁRIOS elementos através de um/vários seletor(es)/*
 
 // Acessando o DOM
 
-const subtitulo_dom = document.getElementById ("subtitulo_dom");
-const desenho = document.querySelector ("figure");
-const descricao = document.querySelector ("descricao");
+const subtitulo_dom = document.getElementById("subtitulo_dom");
+const desenho = document.querySelector("figure");
+const descricao = document.querySelector("descricao");
 
-console.log (desenho);
-console.log (descricao);
+console.log(desenho);
+console.log(descricao);
 
 const varioselementos = document.querySelectorAll("h3,a");
 console.log(varioselementos);
@@ -31,20 +31,40 @@ console.log(varioselementos);
 // Modificando o DOM
 
 
-const titulo = document.querySelector ("h1");
+const titulo = document.querySelector("h1");
 titulo.textContent = "Olá Javascript!";
 titulo.style.textAlign = "center"; //CSS inline via JS 
 titulo.classList.add("destaque");// Classe CSS via JS
 
-const linksReferencias = document.querySelectorAll ("ul li a");
+const linksReferencias = document.querySelectorAll("ul li a");
 
 console.log(linksReferencias);
 
 let quantidadeDeLinks = linksReferencias.length;
 
-for(let i = 0; i < quantidadeDeLinks; i++) {
-    linksReferencias[i].setAttribute ("target","_blank");
+///for(let i = 0; i < quantidadeDeLinks; i++) {
+//  link.setAttribute ("target","_blank");
+//}
+
+for (let link of linksReferencias) {
+    link.setAttribute("target", "_blank");
+
+
 }
 
+/*  Manipulando Eventos / Ações*/ 
+
+const pagina = document.querySelector ("body");
+const exemplo1 = document.querySelector ("#exemplo1");
+const mensagem = document.querySelector ("#mensagem");
+
+//Ouvinte de evento 
+exemplo1.addEventListener("click", function (){
+
+    pagina.style.fontFamily = "Verdana";
+    mensagem.textContent = "Fonte alterada!";
+    mensagem.style.backgroundColor= "yellow";
+   
+;});
 
 
