@@ -89,3 +89,23 @@ function gerenciarModoNoturno() {
     pagina.classList.toggle("modo-noturno");
 }
 
+// Exercício faça aqui mesmo neste lugar exatamente aqui 
+
+
+//Se a página estiver com a classe chamada "modo-noturno" então mude o texto do botão para "desativar". Caso contrário, faça o botão exibir o texto "Ativar"
+
+
+let input = document.querySelector(".input");
+
+let button = document.querySelector(".button");
+
+button disabled = true
+
+input.addEventListener ("change",stateHandle);
+function stateHandle(){
+    if(document.querySelector(".input").value ==="")(
+        button.disabled = true;
+    ) 
+    else botao.disabled = false;
+}
+
