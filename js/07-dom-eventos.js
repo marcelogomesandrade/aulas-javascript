@@ -79,5 +79,13 @@ exemplo1.addEventListener("click", function () {
     ;
 });
 
+// Exemplo modo noturno 
 
+const botao = document.querySelector("#noturno");
+botao.addEventListener("click", gerenciarModoNoturno);
+
+function gerenciarModoNoturno() {
+
+    pagina.classList.toggle("modo-noturno");
+}
 
