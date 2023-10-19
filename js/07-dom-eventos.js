@@ -97,7 +97,7 @@ function gerenciarModoNoturno() {
 
 
     if (pagina.classList.contains("modo-noturno")){
-        //mude o texto do botão para "desativar"
+    
         botao.textContent = "Desativar";
     }
         
