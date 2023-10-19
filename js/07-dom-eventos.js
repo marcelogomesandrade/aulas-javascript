@@ -52,19 +52,32 @@ for (let link of linksReferencias) {
 
 }
 
-/*  Manipulando Eventos / Ações*/ 
+/*  Manipulando Eventos / Ações*/
 
-const pagina = document.querySelector ("body");
-const exemplo1 = document.querySelector ("#exemplo1");
-const mensagem = document.querySelector ("#mensagem");
+const pagina = document.querySelector("body");
+const exemplo1 = document.querySelector("#exemplo1");
+const mensagem = document.querySelector("#mensagem");
+
+const reprodutorAudio = document.querySelector("#reprodutor-audio");
+const imageMeme = document.querySelector("#imagem-meme");
 
 //Ouvinte de evento 
-exemplo1.addEventListener("click", function (){
+exemplo1.addEventListener("click", function () {
 
     pagina.style.fontFamily = "Verdana";
     mensagem.textContent = "Fonte alterada!";
-    mensagem.style.backgroundColor= "yellow";
-   
-;});
+    mensagem.style.backgroundColor = "yellow";
+
+    //Executamos o aúdio com play
+
+    reprodutorAudio.play();
+
+    //Removemos o atributo hidden (portando a imagem aparecer)
+
+    imageMeme.removeAttribute("hidden");
+
+    ;
+});
+
 
 
